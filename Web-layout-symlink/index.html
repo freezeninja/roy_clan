@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Home</title>
+
+	<!-- ********|| STYLESHEETS STARTS ||******** -->
+	<style>
+		:root {
+			--primaryColor: #d32127;
+			--secondaryColor: #212121;
+			--thirdColor: #7c8098;
+			--textColor: #212121;
+			--lightColor: #f6f5f7;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.preloader {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			z-index: 999999;
+			background-color: #fff;
+			opacity: 1;
+			visibility: visible;
+			transition: all 0.3s ease;
+		}
+
+		.preloader.inactive {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.preloader:after {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -.25em
+		}
+
+		.preloader:before {
+			content: '';
+			display: block;
+			height: 100%;
+		}
+
+		.preloader .content {
+			box-sizing: border-box;
+			animation: fadein 0.5s 1s linear forwards;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			font-size: 0;
+			opacity: 0
+		}
+
+		.loader-line-mask {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 30px;
+			height: 60px;
+			margin-left: -30px;
+			margin-top: -30px;
+			overflow: hidden;
+			transform-origin: 30px 30px;
+			-webkit-mask-image: -webkit-linear-gradient(top, var(--primaryColor), rgba(0, 0, 0, 0));
+			mix-blend-mode: hard-light;
+			opacity: .8
+		}
+
+		.loader-line-mask .loader-line {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%
+		}
+
+		.loader-line-mask.one {
+			animation: rotate 1.6s infinite linear
+		}
+
+		.loader-line-mask.one .loader-line {
+			box-shadow: inset 0 0 0 8px var(--primaryColor);
+		}
+
+		.loader-line-mask.two {
+			animation: rotate 1.6s 0.8s infinite linear
+		}
+
+		.loader-line-mask.two .loader-line {
+			box-shadow: inset 0 0 0 8px var(--primaryColor);
+		}
+
+		@keyframes rotate {
+			0% {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				transform: rotate(0deg)
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				transform: rotate(360deg)
+			}
+		}
+
+		@keyframes fadein {
+			0% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+	</style>
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<!-- ********|| STYLESHEETS ENDS ||******** -->
+	<!--[if gte IE 9]
+<style type="text/css"> .gradient{filter: none;}</style>
+<![endif]-->
+	<!-- ********|| STYLESHEETS STARTS ||******** -->
+	<link href="assets/lib/bootstrap4/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/lib/fontawesome5-all/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/lib/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/lib/owl-carousel/owl.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+	<!-- ********|| STYLESHEETS ENDS ||******** -->
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="content">
+			<div class="loader-circle"></div>
+			<div class="loader-line-mask one">
+				<div class="loader-line"></div>
+			</div>
+			<div class="loader-line-mask two">
+				<div class="loader-line"></div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header_content d-flex">
+			<div class="search_box white_color header_icon my-auto">
+				<i class="fal fa-search"></i>
+			</div>
+			<div class="header_logo my-auto">
+				<a href="#">
+					<img src="./assets/img/roy clan logo white-01.png" alt="img">
+				</a>
+			</div>
+			<div class="add_to_cart_btn header_icon my-auto">
+				<a href="#" class="white_color">
+					<i class="far fa-cart-arrow-down"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="header_banner">
+		<img src="./assets/img/home-page.gif" alt="img">
+	</section>
+
+	<section class="banner_down position_relative">
+		<div class="banner_down_img position_relative">
+			<img src="./assets/img/preown1 1.jpg" alt="img" class="img-fluid">
+		</div>
+		<div class="banner_large_txt text-center">
+			<p class="coral_script script_f_s font_bold yellow_color mb-5 tlt">One</p>
+			<p class="coral_serif brown_color serif_f_s brown_col py-2 tlt">
+				DESTINATION
+			</p>
+			<p class="coral_serif brown_color serif_f_s brown_col pt-4 pb-2 tlt">
+				FOR ALL
+			</p>
+			<p class="coral_serif brown_color serif_f_s brown_col pt-4 pb-2 tlt">
+				YOUR
+			</p>
+			<p class="coral_serif brown_color serif_f_s brown_col pt-4 pb-2">
+				<span class="coral_script script_f_s font_bold yellow_color tlt">premium</span>AND <span
+					class="coral_script script_f_s font_bold yellow_color tlt"> luxury</span>
+			</p>
+			<p class="coral_serif brown_color serif_f_s brown_col pt-4 tlt">
+				NEEDs
+			</p>
+		</div>
+	</section>
+
+
+
+
+
+
+
+	<!-- ********|| JAVASCRIPTS STARTS ||******** -->
+	<script type="text/javascript" src="assets/lib/jQuery/jquery-3.3.1.js"></script>
+	<script defer="defer" type="text/javascript" src="assets/lib/bootstrap4/popper.min.js"></script>
+	<script defer="defer" type="text/javascript" src="assets/lib/bootstrap4/bootstrap.js"></script>
+	<script defer="defer" type="text/javascript" src="assets/lib/owl-carousel/owl.carousel.min.js"></script>
+	<script defer="defer" type="text/javascript" src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+	<script defer="defer" type="text/javascript" src="assets/js/script.js"></script>
+	<!-- ********|| JAVASCRIPTS ENDS ||******** -->
+	<!-- ********|| ONPAGE JAVASCRIPTS STARTS ||******** -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+		integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+		integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script defer="defer" type="text/javascript">
+		$(document).ready(function () {
+			$('.tlt').textillate({
+				loop: true,
+				minDisplayTime: 3000,
+				autoStart: true,
+				in: {
+					effect: 'fadeIn',
+					delayScale: 3.5,
+				},
+				out: {
+					effect: "fadeOutLeft",
+					delayScale: 1.5,
+					sync: true
+				}
+				
+
+				})
+		});
+	</script>
+	<!-- ********|| ONPAGE JAVASCRIPTS ENDS ||******** -->
+</body>
+
+</html>
