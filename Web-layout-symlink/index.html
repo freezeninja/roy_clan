@@ -140,7 +140,7 @@
 	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 	<!-- ********|| STYLESHEETS ENDS ||******** -->
 	<!-- aos librery  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -194,8 +194,8 @@
 				YOUR
 			</p>
 			<p class="coral_serif brown_color serif_f_s brown_col pt-4 pb-2">
-				<span class="coral_script script_f_s font_bold yellow_color tlt">premium</span><span data-aos="zoom-in"> AND</span> <span
-					class="coral_script script_f_s font_bold yellow_color tlt"> luxury</span>
+				<span class="coral_script script_f_s font_bold yellow_color tlt">premium</span><span data-aos="zoom-in">
+					AND</span> <span class="coral_script script_f_s font_bold yellow_color tlt"> luxury</span>
 			</p>
 			<p class="coral_serif brown_color serif_f_s brown_col pt-4" data-aos="zoom-in">
 				NEEDs
@@ -203,7 +203,7 @@
 		</div>
 	</section>
 
-	<section class="luxary_studio" id="luxary_studio">
+	<section class="luxary_studio py-5" id="luxary_studio">
 		<h4 class="coral_serif white_color text-center">DIVE INTO THE WORLD OF LUXURY WITH</h4>
 		<h1 class="coral_serif white_color text-center serif_f_s_large">STUDIO</h1>
 		<div class="button_outer d-flex align-items-center justify-content-center my-4">
@@ -212,7 +212,7 @@
 				<div class="vector_img">
 					<img src="./assets/img/Vector 16.png" alt="img" class="img-fluid">
 				</div>
-				<div class="btn_txt yellow_color FS-4 coral_serif" id="btn_txt">
+				<div class="btn_txt yellow_color FS-4 coral_serif js_curve">
 					TAKE THE TOUR
 				</div>
 			</div>
@@ -251,7 +251,7 @@
 						<div class="vector_img">
 							<img src="./assets/img/Vector 16.png" alt="img" class="img-fluid">
 						</div>
-						<div class="btn_txt yellow_color FS-4 coral_serif" id="btn_txt2">
+						<div class="btn_txt yellow_color FS-4 coral_serif js_curve">
 							TAKE THE TOUR
 						</div>
 					</div>
@@ -259,7 +259,8 @@
 				<div class="col-lg-3 col-md-12 col-sm-12"></div>
 			</div>
 			<div class="live_tv_txt">
-				<h1 class="coral_serif white_color text-center serif_f_s_large">LIVE <span class="brown_col"> TV</span></h1>
+				<h1 class="coral_serif white_color text-center serif_f_s_large">LIVE <span class="brown_col"> TV</span>
+				</h1>
 			</div>
 		</div>
 	</section>
@@ -306,11 +307,12 @@
 				</div>
 			</div>
 			<div class="follow_us_txt">
-				<p class="brown_col"><span class="coral_script FOLLOW_US_SCRIPT">FOLLOW </span> <span class="coral_serif serif_f_s"> US</span></p>
+				<p class="brown_col"><span class="coral_script FOLLOW_US_SCRIPT">FOLLOW </span> <span
+						class="coral_serif serif_f_s"> US</span></p>
 			</div>
 		</div>
 	</section>
-	
+
 
 
 
@@ -333,15 +335,15 @@
 		integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<!-- aos  -->
-		<script src="https://unpkg.com/scrollreveal"></script>
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				offset: 200,
-				duration: 2000
-			});
-		</script>
+	<!-- aos  -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 200,
+			duration: 2000
+		});
+	</script>
 
 
 	<script defer="defer" type="text/javascript">
@@ -366,10 +368,10 @@
 	</script>
 
 	<script defer type="text/javascript">
-	 const cirle =	new CircleType(document.getElementById('btn_txt'));
-	 cirle.radius(60);
-	 const cirle2 =	new CircleType(document.getElementById('btn_txt2'));
-	 cirle2.radius(60);
+		const btn_txt = document.querySelectorAll('.js_curve');
+		btn_txt.forEach((elem) => {
+			new CircleType(elem).radius(60);
+		})
 	</script>
 	<!-- ********|| ONPAGE JAVASCRIPTS ENDS ||******** -->
 </body>
